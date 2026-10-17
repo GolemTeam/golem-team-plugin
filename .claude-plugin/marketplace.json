@@ -1,0 +1,15 @@
+{
+  "name": "golem",
+  "owner": {
+    "name": "Golem",
+    "url": "https://golem.team"
+  },
+  "plugins": [
+    {
+      "name": "golem",
+      "source": "./plugins/golem",
+      "description": "Golem (golem.team), AI Detection and Response for coding agents. Signs every tool call into a tamper-evident ledger, blocks or gates the dangerous ones, and gives each session your fleet's context."
+    }
+  ],
+  "description": "Golem (golem.team), AI Detection and Response for coding agents. A signed, tamper-evident record of what your agents did, in-path blocking of what policy refuses, and your fleet's context in every session."
+}

@@ -1,0 +1,79 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "http://127.0.0.1:39393/api/v1/hooks/tool-use",
+            "timeout": 45,
+            "headers": {
+              "X-Golem-Hold-Seconds": "35",
+              "X-Golem-Supports-Ask": "1"
+            }
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "http",
+            "url": "http://127.0.0.1:39393/api/v1/hooks/tool-use",
+            "timeout": 45,
+            "headers": {
+              "X-Golem-Hold-Seconds": "35"
+            }
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "http",
+            "url": "http://127.0.0.1:39393/api/v1/hooks/session-start",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "http",
+            "url": "http://127.0.0.1:39393/api/v1/hooks/user-prompt-submit",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "UserPromptExpansion": [
+      {
+        "hooks": [
+          {
+            "type": "http",
+            "url": "http://127.0.0.1:39393/api/v1/hooks/user-prompt-expansion",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "PermissionDenied": [
+      {
+        "hooks": [
+          {
+            "type": "http",
+            "url": "http://127.0.0.1:39393/api/v1/hooks/tool-use",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

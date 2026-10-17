@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "golem-witness": {
+      "type": "http",
+      "url": "http://127.0.0.1:39393/"
+    },
+    "golem-context": {
+      "type": "http",
+      "url": "http://127.0.0.1:39393/context/"
+    }
+  }
+}

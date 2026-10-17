@@ -1,0 +1,26 @@
+{
+  "name": "golem",
+  "displayName": "Golem",
+  "version": "2026.9.4",
+  "description": "Golem (golem.team), AI Detection and Response for coding agents: a signed record of what your agents did, in-path blocking of what policy refuses, and your fleet's context in every session.",
+  "homepage": "https://golem.team",
+  "repository": "https://github.com/GolemTeam/golem-team-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "security",
+    "agent-security",
+    "coding-agents",
+    "audit",
+    "observability",
+    "governance",
+    "mcp",
+    "prompt-injection",
+    "agents"
+  ],
+  "author": {
+    "name": "Golem",
+    "url": "https://golem.team"
+  },
+  "mcpServers": "./.mcp.json",
+  "hooks": "./hooks/hooks.json"
+}
